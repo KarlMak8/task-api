@@ -7,3 +7,11 @@ export async function getAllTasks() {
 export async function createTask(newTask) {
   return taskRepository.create(newTask);
 }
+
+export async function getTaskById(id) {
+  const task = await taskRepository.findById(id);
+  if (!task) {
+    throw new Error('Task not found');
+  }
+  return task;
+}

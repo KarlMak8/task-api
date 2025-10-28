@@ -2,4 +2,4 @@ description: Invalid input
 content:
   application/json:
     schema:
-      $ref: ../components/schemas/ValidationError.yaml
+      $ref: ../schemas/ValidationError.yaml
